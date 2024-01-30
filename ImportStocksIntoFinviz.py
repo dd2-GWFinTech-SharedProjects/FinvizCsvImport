@@ -21,17 +21,28 @@ for stock in stock_list[9:19]:  # Loop through 10th - 20th stocks
 # or just stock_list(filters=['fa_div_high'])
 
 # Print the table into the console
+print()
+print("Screener")
+print("---------")
+print()
+print(stock_list)
+print()
 
 
 
 
 
-#Using Portfolio
+# Portfolio
 
-#from finviz.portfolio import Portfolio
-#portfolio = Portfolio('<your-email-address>', '<your-password>', '<portfolio-name>')
+from finviz.portfolio import Portfolio
+portfolio = Portfolio('david_0187_finance@mail.com', 'Windfall#9', 'Watchlist 1: Trending Stocks')
 # Print the portfolio into the console
-#print(portfolio)
+print()
+print("Portfolio")
+print("---------")
+print()
+print(portfolio)
+print()
 
 
 
@@ -39,15 +50,16 @@ for stock in stock_list[9:19]:  # Loop through 10th - 20th stocks
 
 
 #Individual stocks
-
-#import finviz
+import finviz
+print()
+print("Individual Stocks")
+print("---------")
+print()
 #finviz.get_stock('AAPL')
-
+print()
 
 
 # Downloading charts
-
-
 # Monthly, Candles, Large, No Technical Analysis
 #stock_list.get_charts(period='m', chart_type='c', size='l', ta='0')
 
